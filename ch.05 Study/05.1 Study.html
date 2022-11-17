@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Vue Template - Data Binding</title>
+  </head>
+  <body>
+    <div id="app">
+      <p v-bind:id="idA">아이디 바인딩</p>
+      <p v-bind:class="classA">클래스 바인딩</p>
+      <p v-bind:style="styleA">스타일 바인딩</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          idA: 10,
+          classA: 'container',
+          styleA: 'color: blue'
+        }
+      });
+    </script>
+  </body>
+</html>
+<!--v-bind에 대한 내용이다. v-bind는 아이디 클래스 스타일 등의 html 속성
+  값에 뷰 데이터 값을 연결해 사용하는 데이터 연결 방식이다.!-->
+  

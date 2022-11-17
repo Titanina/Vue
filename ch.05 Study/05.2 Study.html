@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Vue Template - Javascript Expression</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ message }}</p>
+      <p>{{ message + "!!!" }}</p>
+      <p>{{ message.split('').reverse().join('') }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue.js!'
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!--뷰의 템플릿 중에서도 자바스크립트 표현식이 가능. 데이터 바인딩
+  방법중 하나인 {{}} 안에 자바스크립트 표현식을 넣으면된다.!-->
+  
